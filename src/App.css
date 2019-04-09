@@ -1,26 +1,21 @@
+/* font-family: 'Titillium Web', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+
 .App {
   background: #232323;
+  color: white;
   display: inline-block;
   width: 90%;
   height: 100%;
   min-height: 100%;
-}
-
-.Header-container {
-  height: 100%;
-}
-
-.Header-image {
-  background-image: url(./CodingBG.png);
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  height: 45vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-family: 'Lato', sans-serif;
 }
 
 .Header {
+  background-image: url(./CodingBGBlurred.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -29,12 +24,18 @@
   color: white;
   padding: 10px;
   height: 45vh;
-  background-color: rgba(0, 0, 0, 0.4);
   border-bottom: 3px #cdcdcd solid;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  z-index: 2;
+  margin: 10px;
+}
+
+.Header h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  font-size: 4em;
+}
+.Header p {
+  margin: 1px;
 }
 #leftside {
   width: 50%;
@@ -45,8 +46,8 @@
 
 #profilepic {
   border: 3px #cdcdcd solid;
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  height: 45%;
 }
 
 .content {

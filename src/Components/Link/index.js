@@ -3,10 +3,18 @@ import './styles.css';
 
 export default class Link extends React.Component {
   render() {
-    let linkTo = this.props.to;
+    let linkTo = this.props.link;
     return (
       <div className="Link">
-        <a href={linkTo}>{this.props.to}</a>
+        <a href={linkTo} target="_blank" rel="noopener noreferrer">
+          {this.props.to}{' '}
+          <img
+            src={this.props.ico}
+            width="32px"
+            height="32px"
+            alt={`${this.props.ico} icon.`}
+          />
+        </a>
       </div>
     );
   }
