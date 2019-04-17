@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-export default class LgProject extends React.Component {
+export default class SmProject extends React.Component {
   render() {
-    let projectImage = this.props.image;
-    let itemSide = this.props.side;
     return (
-      <div className={'LgProject ' + itemSide}>
+      <div className="SmProject">
         <h2>{this.props.projectName}</h2>
-        {projectImage ? (
-          <img id="projectImage" src={projectImage} alt="" />
-        ) : null}{' '}
         <div className="sst">
           <div className="stack">
             <h4>Stack: </h4>
