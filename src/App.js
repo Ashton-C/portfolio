@@ -50,6 +50,20 @@ class App extends Component {
         </div>
 
         <div className="content">
+          <div classsName="AboutMe">
+            <h3>About Me</h3>
+            <img />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              efficitur odio ut mi efficitur venenatis. Curabitur sed aliquet
+              sapien. Nunc diam enim, blandit non lorem at, bibendum varius
+              nisi. Integer vestibulum placerat eleifend. Cras convallis augue
+              at ex blandit accumsan. Fusce eget ex tincidunt, finibus risus
+              vel, elementum elit. Sed hendrerit suscipit ipsum sit amet
+              sodales. Nullam sit amet malesuada massa. Nam nisl ipsum, feugiat
+              sollicitudin feugiat ut, congue vel enim.
+            </p>
+          </div>
           <div className="Projects">
             <h3>Projects I've Worked On</h3>
             <div className="largeProjects">
