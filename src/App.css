@@ -1,18 +1,25 @@
 /* font-family: 'Titillium Web', sans-serif; */
 /* font-family: 'Lato', sans-serif; */
 
+:root {
+  --main-bg-color: rgba(255, 255, 255, 0.2);
+  --accent-color: #6cffad;
+  --head-font: 'Titillium Web', sans-serif;
+  --body-font: 'Ubuntu', sans-serif;
+}
+
 .App {
   color: white;
   display: inline-block;
   width: 96%;
   height: 100%;
   min-height: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--body-font);
 }
 
 .Header {
   /* background-image: url(./CodingBGBlurred.png); */
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--main-bg-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,10 +36,11 @@
 }
 
 .Header h1 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: var(--head-font);
   font-weight: 300;
   margin: 0px;
   font-size: 4em;
+  color: var(--accent-color);
 }
 .Header p {
   margin: 1px;
@@ -51,16 +59,30 @@
 }
 
 .App h3 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: var(--head-font);
   font-weight: 300;
   margin: 0px;
   font-size: 2em;
+  color: var(--accent-color);
 }
 
-.AboutMe {
-  height: 40vh;
+.App .aboutMe {
+  display: flex;
+  font-size: 1.5em;
 }
 
+.App .aboutMe > * {
+  padding: 50px;
+  margin: 0;
+}
+
+.App .aboutMe > p {
+  line-height: 2;
+  width: min-content;
+  flex: 1 1 auto;
+  background: var(--main-bg-color);
+  border-radius: 25px;
+}
 .largeProjects {
   display: flex;
   flex-direction: row;

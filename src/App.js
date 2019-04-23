@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Link from './Components/Link';
 import LgProject from './Components/LgProject';
 import SmProject from './Components/SmProject';
+import SlideShow from './Components/SlideShow';
 import './App.css';
 import profPic from './AngelsLandingSelfieSquare.jpg';
 import gitHubIco from './GitHub-Mark-Light-32px.png';
@@ -10,6 +11,9 @@ import emailIco from './logo_gmail_32px.png';
 import linkedInIco from './Popular_Social_Media-22-512.png';
 import techSkillsImg from './SoughtTechSkillsImg.png';
 import ktrackerImg from './Ktrackerimg.png';
+import us from './Us.jpg';
+import boe from './Boe.JPG';
+import scottie from './Scottie.JPG';
 
 class App extends Component {
   render() {
@@ -50,18 +54,18 @@ class App extends Component {
         </div>
 
         <div className="content">
-          <div classsName="AboutMe">
-            <h3>About Me</h3>
-            <img />
+          <h3>About Me</h3>
+          <div className="aboutMe">
+            <SlideShow images={[us, boe, scottie]} />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              efficitur odio ut mi efficitur venenatis. Curabitur sed aliquet
-              sapien. Nunc diam enim, blandit non lorem at, bibendum varius
-              nisi. Integer vestibulum placerat eleifend. Cras convallis augue
-              at ex blandit accumsan. Fusce eget ex tincidunt, finibus risus
-              vel, elementum elit. Sed hendrerit suscipit ipsum sit amet
-              sodales. Nullam sit amet malesuada massa. Nam nisl ipsum, feugiat
-              sollicitudin feugiat ut, congue vel enim.
+              Hello, welcome to my portfolio! As mentioned above, I am a web
+              developer looking to find my first job in the industry. Aside from
+              loving tech and development, I love my beautiful wife Christianna,
+              my dog Boe, and my cat Scottie. Some of my hobbies include
+              longboarding, cycling, boardgames, hiking, reading, learning,
+              Hearthstone and other PC games, 3D printing, and playing Guitar
+              Hero. I currently live in Salt Lake City, UT, but will be
+              relocating to the Portland/Vancouver area in the coming months.
             </p>
           </div>
           <div className="Projects">
