@@ -3,6 +3,7 @@ import Link from './Components/Link';
 import LgProject from './Components/LgProject';
 import SmProject from './Components/SmProject';
 import SlideShow from './Components/SlideShow';
+import Skill from './Components/Skill';
 import './App.css';
 import profPic from './AngelsLandingSelfieSquare.jpg';
 import gitHubIco from './GitHub-Mark-Light-32px.png';
@@ -93,30 +94,40 @@ class App extends Component {
             <ul className="smallProjects">
               <li>
                 <SmProject
-                  projectName="KTracker"
-                  date="March 2019"
-                  stack="ReactJS front end, Node/ExpressJS back end. React Router, SQLite, and Babel."
-                  summary="KTracker is a bug tracking application I developed to  with a program called Kraken that we used in the warehouse at my previous job. It is a simple bug and feature request tracker."
-                  takeaway="This project was originally going to be a command line app, but I decided to try out Flask with this project. Main takeaways included basic data manipulation, basic html templating usage, and basic scraping knowledge."
+                  projectName="Social Card Generator"
+                  date="January 2019"
+                  stack="ReactJS, HTML/CSS, Bootstrap"
+                  summary="A small program meant to help create cool social cards. It takes a profile pic, your name and contact info, then you choose a randomly generated gradient and it will output a nice, clean card."
+                  takeaway="I learnt about uploading files, classic Javascript functions for randomization, exporting to PDF, and making forms."
                 />
               </li>
               <li>
                 <SmProject
-                  projectName="KTracker"
-                  date="March 2019"
-                  stack="ReactJS front end, Node/ExpressJS back end. React Router, SQLite, and Babel."
-                  summary="KTracker is a bug tracking application I developed to  with a program called Kraken that we used in the warehouse at my previous job. It is a simple bug and feature request tracker."
-                  takeaway="This project was originally going to be a command line app, but I decided to try out Flask with this project. Main takeaways included basic data manipulation, basic html templating usage, and basic scraping knowledge."
+                  projectName="Spotify Genre Playlist Generator"
+                  date="October 2018"
+                  stack="Python3, Spotify API, GraceNote API"
+                  summary="A command line program that snacs a useres Spotify library and runs it through the GraceNote API to sort it into the proper genre playlist and creates said playliston the user's account."
+                  takeaway="I learned alot about APIs, data manipulation, and authentication."
                 />
               </li>
-              <li>
-                <SmProject
-                  projectName="KTracker"
-                  date="March 2019"
-                  stack="ReactJS front end, Node/ExpressJS back end. React Router, SQLite, and Babel."
-                  summary="KTracker is a bug tracking application I developed to  with a program called Kraken that we used in the warehouse at my previous job. It is a simple bug and feature request tracker."
-                  takeaway="This project was originally going to be a command line app, but I decided to try out Flask with this project. Main takeaways included basic data manipulation, basic html templating usage, and basic scraping knowledge."
-                />
+            </ul>
+          </div>
+          <div className="Skills">
+            <ul>
+              <li className="leftSkill">
+                <Skill skill="Javascript" level={2} />
+              </li>
+              <li className="rightSkill">
+                <Skill skill="ReactJS" level={1} />
+              </li>
+              <li className="leftSkill">
+                <Skill skill="ExpressJS" level={1} />
+              </li>
+              <li className="rightSkill">
+                <Skill skill="HTML/CSS" level={2} />
+              </li>
+              <li className="leftSkill">
+                <Skill skill="Python3" level={1} />
               </li>
             </ul>
           </div>

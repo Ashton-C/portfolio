@@ -11,7 +11,7 @@
 .App {
   color: white;
   display: inline-block;
-  width: 96%;
+  width: 75%;
   height: 100%;
   min-height: 100%;
   font-family: var(--body-font);
@@ -72,7 +72,7 @@
 }
 
 .App .aboutMe > * {
-  padding: 50px;
+  padding: 25px;
   margin: 0;
 }
 
@@ -92,6 +92,10 @@
 
 .App ul {
   list-style-type: none;
+}
+
+.leftSkill {
+  width: 175%;
 }
 
 /* .content {

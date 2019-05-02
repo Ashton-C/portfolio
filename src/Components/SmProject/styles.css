@@ -40,7 +40,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 33%;
+}
+.SmProject .summary {
   border-right: 2px solid #cdcdcd;
   border-left: 2px solid #cdcdcd;
-  width: 33%;
+  padding: 0 5px 0px 5px;
 }

@@ -1,0 +1,38 @@
+.Skill {
+  font-family: sans-serif;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1em;
+  width: 50%;
+  margin: auto;
+}
+
+.skill {
+  display: inline-flex;
+  width: 50%;
+}
+
+.skillName {
+  display: inline-block;
+  width: 75%;
+  margin: 3vh 1vw;
+  font-weight: 600;
+}
+
+.level {
+  display: inline-flex;
+  width: 25%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1vw;
+}
+
+.circle {
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 1px solid #42f4ce;
+}
+.filled {
+  background: #42f4ce;
+}
