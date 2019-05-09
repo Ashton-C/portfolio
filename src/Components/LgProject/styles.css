@@ -1,49 +1,67 @@
-.LgProject {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 48%;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.2);
+@media screen and (max-width: 599px) {
+  .LgProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98%;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px;
+  }
+  #projectImage {
+    height: auto;
+    max-width: 90%;
+    margin: auto;
+  }
 }
 
-.LgProject h2 {
-  text-align: center;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
-}
+@media screen and (min-width: 600px) {
+  .LgProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+  }
 
-.LgProject h4 {
-  font-family: 'Titillium Web', sans-serif;
-}
+  .LgProject h2 {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+  }
 
-.LgProject > .sst {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  .LgProject h4 {
+    font-family: 'Titillium Web', sans-serif;
+  }
 
-.LgProject > .sst > * {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex: 0 1 auto;
-  border-bottom: 2px solid #cdcdcd;
-}
+  .LgProject > .sst {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-#projectImage {
-  height: auto;
-  max-width: 100%;
-}
-.left {
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-right-radius: 25px;
-}
+  .LgProject > .sst > * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 1 auto;
+    border-bottom: 2px solid #cdcdcd;
+  }
 
-.right {
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
+  #projectImage {
+    height: auto;
+    max-width: 100%;
+  }
+  .left {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  .right {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+  }
 }

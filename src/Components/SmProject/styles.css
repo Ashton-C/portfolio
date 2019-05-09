@@ -1,49 +1,64 @@
-.SmProject {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 10%;
-  width: 95%;
-  padding: 10px;
-  margin: 20px 0px 20px 0px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 1em;
+@media screen and (max-width: 599px) {
+  .SmProject {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+  }
 }
 
-.SmProject:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 0;
-  height: 0;
-  border: 2em solid transparent;
-  border-right-color: rgba(255, 255, 255, 0.2);
-  border-left: 0;
-  margin-top: -2em;
-  margin-left: -2em;
-}
+@media screen and (min-width: 600px) {
+  .SmProject {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10%;
+    width: 95%;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+  }
 
-.SmProject h2 {
-  text-align: center;
-}
+  .SmProject:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 2em solid transparent;
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-left: 0;
+    margin-top: -2em;
+    margin-left: -2em;
+  }
 
-.SmProject > .sst {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
+  .SmProject h2 {
+    text-align: center;
+  }
 
-.SmProject > .sst > * {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 33%;
-}
-.SmProject .summary {
-  border-right: 2px solid #cdcdcd;
-  border-left: 2px solid #cdcdcd;
-  padding: 0 5px 0px 5px;
+  .SmProject > .sst {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .SmProject > .sst > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+  }
+  .SmProject .summary {
+    border-right: 2px solid #cdcdcd;
+    border-left: 2px solid #cdcdcd;
+    padding: 0 5px 0px 5px;
+  }
 }

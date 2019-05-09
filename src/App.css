@@ -8,105 +8,147 @@
   --body-font: 'Ubuntu', sans-serif;
 }
 
-.App {
-  color: white;
-  display: inline-block;
-  width: 75%;
-  height: 100%;
-  min-height: 100%;
-  font-family: var(--body-font);
+@media screen and (max-width: 599px) {
+  .App {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-family: var(--body-font);
+    font-weight: 100;
+  }
+  .Header {
+    background-color: var(--main-bg-color);
+    position: relative;
+    height: auto;
+    margin: 5px;
+  }
+  #profilepic {
+    border: 3px #cdcdcd solid;
+    width: 80%;
+    height: 80%;
+    margin: 15px;
+  }
+  .Header h1 {
+    font-family: var(--head-font);
+    font-weight: 300;
+    margin: 0px;
+    font-size: 2.5em;
+    color: var(--accent-color);
+  }
+  .App h3 {
+    font-family: var(--head-font);
+    font-weight: 300;
+    margin: 0px;
+    font-size: 1.75em;
+    color: var(--accent-color);
+  }
+  .aboutMe {
+    background: var(--main-bg-color);
+    border-radius: 25px;
+    padding: 20px;
+    line-height: 2;
+    margin: 5px;
+  }
+  .App ul {
+    list-style-type: none;
+  }
 }
 
-.Header {
-  /* background-image: url(./CodingBGBlurred.png); */
-  background-color: var(--main-bg-color);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  color: white;
-  padding: 10px;
-  height: 45vh;
-  border-bottom: 3px #cdcdcd solid;
-  margin: 10px;
-}
+@media screen and (min-width: 600px) {
+  .App {
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-family: var(--body-font);
+  }
 
-.Header h1 {
-  font-family: var(--head-font);
-  font-weight: 300;
-  margin: 0px;
-  font-size: 4em;
-  color: var(--accent-color);
-}
-.Header p {
-  margin: 1px;
-}
-#leftside {
-  width: 50%;
-}
-#rightside {
-  width: 50%;
-}
+  .Header {
+    /* background-image: url(./CodingBGBlurred.png); */
+    background-color: var(--main-bg-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    height: 45vh;
+    border-bottom: 3px #cdcdcd solid;
+    margin: 10px;
+  }
 
-#profilepic {
-  border: 3px #cdcdcd solid;
-  width: 45%;
-  height: 45%;
-}
+  .Header h1 {
+    font-family: var(--head-font);
+    font-weight: 300;
+    margin: 0px;
+    font-size: 2em;
+    color: var(--accent-color);
+  }
+  .Header p {
+    margin: 1px;
+  }
+  #leftside {
+    width: 50%;
+  }
+  #rightside {
+    width: 50%;
+  }
 
-.App h3 {
-  font-family: var(--head-font);
-  font-weight: 300;
-  margin: 0px;
-  font-size: 2em;
-  color: var(--accent-color);
-}
+  #profilepic {
+    border: 3px #cdcdcd solid;
+    width: 45%;
+    height: 45%;
+  }
 
-.App .aboutMe {
-  display: flex;
-  font-size: 1.5em;
-}
+  .App h3 {
+    font-family: var(--head-font);
+    font-weight: 300;
+    margin: 0px;
+    font-size: 2em;
+    color: var(--accent-color);
+  }
 
-.App .aboutMe > * {
-  padding: 25px;
-  margin: 0;
-}
+  .App .aboutMe {
+    display: flex;
+    font-size: 1.5em;
+  }
 
-.App .aboutMe > p {
-  line-height: 2;
-  width: min-content;
-  flex: 1 1 auto;
-  background: var(--main-bg-color);
-  border-radius: 25px;
-}
-.largeProjects {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 20px;
-}
+  .App .aboutMe > * {
+    padding: 25px;
+    margin: 0;
+  }
 
-.App ul {
-  list-style-type: none;
-}
+  .App .aboutMe > p {
+    line-height: 2;
+    width: min-content;
+    flex: 1 1 auto;
+    background: var(--main-bg-color);
+    border-radius: 25px;
+  }
+  .largeProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
 
-.leftSkill {
-  width: 175%;
-}
+  .App ul {
+    list-style-type: none;
+  }
 
-/* .content {
-  padding-bottom: 60px;
-} */
-
-.Footer {
-  background: #232323;
-  position: absolute;
-  height: 60px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  .Footer {
+    background: #232323;
+    position: absolute;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 }
