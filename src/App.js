@@ -198,7 +198,7 @@ class App extends Component {
                     this.state.contactName
                   }%20contacting%20from%20Portfolio%20@%20${
                     this.state.contactEmail
-                  }&body=${this.state.body}`}
+                  }&body=${this.state.contactMessage}`}
                 >
                   {' '}
                   Send!
