@@ -7,8 +7,23 @@
     width: 98%;
     margin: 5px;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 1em;
     padding: 0;
+  }
+  .SmProject > .sst {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .SmProject > .sst > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+  }
+  .SmProject .summary {
+    padding: 0 10px 0px 10px;
   }
 }
 

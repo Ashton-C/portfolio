@@ -9,7 +9,18 @@
 }
 
 @media screen and (max-width: 599px) {
-  .App {
+  .parallax::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+  }
+  .section {
     color: white;
     display: inline-block;
     width: 100%;
@@ -37,7 +48,7 @@
     font-size: 2.5em;
     color: var(--accent-color);
   }
-  .App h3 {
+  .section h3 {
     font-family: var(--head-font);
     font-weight: 300;
     margin: 0px;
@@ -46,20 +57,81 @@
   }
   .aboutMe {
     background: var(--main-bg-color);
-    border-radius: 25px;
     padding: 20px;
     line-height: 2;
     margin: 5px;
   }
-  .App ul {
+  .section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
+  .contactMe {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  input {
+    width: 50%;
+    color: white;
+    border-radius: 1em;
+    padding: 5px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: var(--body-font);
+    font-size: 1.25em;
+  }
+
+  textarea {
+    width: 80%;
+    color: white;
+    height: 15vh;
+    border-radius: 1em;
+    padding: 5px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: var(--body-font);
+    font-size: 1.25em;
+    margin-bottom: 30px;
+  }
+
+  a[name='sendContact'] {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    height: 5vh;
+    border-radius: 1em;
+    padding: 10px;
+    text-decoration: none;
+    font-family: var(--head-font);
+    font-size: 1.25em;
+    color: black;
+  }
+
+  .foot {
+    position: relative;
+    border-top: 3px solid #cdcdcd;
+    background: #10141e;
+    bottom: 0;
+    padding-bottom: 1%;
+  }
 }
 
 @media screen and (min-width: 600px) {
-  .App {
+  .parallax::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+  }
+
+  .section {
+    position: relative;
+    z-index: 1;
     color: white;
     display: inline-block;
     width: 100%;
@@ -81,7 +153,7 @@
     align-items: center;
     color: white;
     padding: 10px;
-    height: 45vh;
+    height: 55vh;
     border-bottom: 3px #cdcdcd solid;
     margin: 10px;
   }
@@ -109,7 +181,7 @@
     height: 45%;
   }
 
-  .App h3 {
+  .section h3 {
     font-family: var(--head-font);
     font-weight: 300;
     margin: 0px;
@@ -117,17 +189,17 @@
     color: var(--accent-color);
   }
 
-  .App .aboutMe {
+  .section .aboutMe {
     display: flex;
     font-size: 1.5em;
   }
 
-  .App .aboutMe > * {
+  .section .aboutMe > * {
     padding: 25px;
     margin: 0;
   }
 
-  .App .aboutMe > p {
+  .section .aboutMe > p {
     line-height: 2;
     width: min-content;
     flex: 1 1 auto;
@@ -141,16 +213,56 @@
     padding-bottom: 20px;
   }
 
-  .App ul {
+  .section ul {
     list-style-type: none;
   }
 
-  .Footer {
-    background: #232323;
-    position: absolute;
-    height: 60px;
-    bottom: 0;
-    left: 0;
+  .contactMe {
+    padding-bottom: 50px;
     width: 100%;
+  }
+
+  input {
+    width: 50%;
+    color: white;
+    border-radius: 1em;
+    padding: 5px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: var(--body-font);
+    font-size: 1.25em;
+  }
+
+  textarea {
+    width: 80%;
+    color: white;
+    height: 15vh;
+    border-radius: 1em;
+    padding: 5px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    font-family: var(--body-font);
+    font-size: 1.25em;
+    margin-bottom: 30px;
+  }
+
+  a[name='sendContact'] {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    height: 5vh;
+    border-radius: 1em;
+    padding: 10px;
+    text-decoration: none;
+    font-family: var(--head-font);
+    font-size: 1.25em;
+    color: black;
+  }
+
+  .foot {
+    position: relative;
+    border-top: 3px solid #cdcdcd;
+    background: #10141e;
+    bottom: 0;
+    padding-bottom: 1%;
   }
 }

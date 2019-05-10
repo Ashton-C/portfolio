@@ -1,13 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import "./styles.css";
+import './styles.css';
 
 export default function Skill(props) {
   let level = props.level;
   return (
     <div className="Skill">
-      <h2>Skills Display</h2>
       <span className="skill">
         <span className="skillName">{props.skill}</span>
         <span className="level">

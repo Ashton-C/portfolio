@@ -1,28 +1,31 @@
 .Skill {
-  font-family: sans-serif;
   text-align: center;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 1em;
   width: 50%;
-  margin: auto;
+  margin: 15px auto;
+  padding: 5px;
+}
+
+.Skills > ul {
+  padding: 0;
 }
 
 .skill {
   display: inline-flex;
-  width: 50%;
+  width: 80%;
 }
 
 .skillName {
   display: inline-block;
-  width: 75%;
+  width: 50%;
   margin: 3vh 1vw;
   font-weight: 600;
 }
 
 .level {
   display: inline-flex;
-  width: 25%;
-  justify-content: space-around;
+  width: 50%;
+  justify-content: space-between;
   align-items: center;
   margin: 1vw;
 }
@@ -31,8 +34,8 @@
   width: 1em;
   height: 1em;
   border-radius: 1em;
-  border: 1px solid #42f4ce;
+  border: 1px solid var(--accent-color);
 }
 .filled {
-  background: #42f4ce;
+  background: var(--accent-color);
 }
