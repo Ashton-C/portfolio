@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Link from './Components/Link';
-import LgProject from './Components/LgProject';
 import SmProject from './Components/SmProject';
 import SlideShow from './Components/SlideShow';
 import Skill from './Components/Skill';
@@ -44,11 +43,9 @@ class App extends Component {
               <img id="profilepic" src={profPic} alt="Pic of me" />
             </div>
             <div id="rightside">
-              <p>Hello! My name is</p>
-              <h1>Ashton Christensen.</h1>
-              <p>
-                I am a web developer looking to get started in the industry.
-              </p>
+              <p>Hello, my name is</p>
+              <h1>Ashton Christensen</h1>
+              <p>I am a web developer looking to get started in the industry</p>
               <br />
               <div className="Links">
                 <Link
@@ -94,16 +91,16 @@ class App extends Component {
             <section className="Projects">
               <h3>Projects I've Worked On</h3>
               <div className="largeProjects">
-                <LgProject
+                <SmProject
                   projectName="KTracker"
                   date="March 2019"
                   image={ktrackerImg}
                   stack="ReactJS front end, Node/ExpressJS back end. React Router, SQLite, and Babel."
                   summary="KTracker is a bug tracking application I developed to help with a program called Kraken that we used in the warehouse at my previous job. It is a simple bug and feature request tracker that allows for multiple users and storing and exporting reports from the DB."
-                  takeaway="KTracker was the first backend I built and I learned a ton from it ranging from building a basic CRUD API with Express to dabbling in SQL for the database to implementing user credential validation."
+                  takeaway="KTracker was the first back-end I built and I learned a ton from it. I built a basic CRUD API with Express, dabbled in SQL for the database for the first time, and implemented user credential validation."
                   side="left"
                 />
-                <LgProject
+                <SmProject
                   projectName="Sought Tech Skills"
                   date="October 2018"
                   image={techSkillsImg}
@@ -113,6 +110,7 @@ class App extends Component {
                   side="right"
                 />
               </div>
+
               <ul className="smallProjects">
                 <li>
                   <SmProject
@@ -120,7 +118,7 @@ class App extends Component {
                     date="January 2019"
                     stack="ReactJS, HTML/CSS, Bootstrap"
                     summary="A small program meant to help create cool social cards. It takes a profile pic, your name and contact info, then you choose a randomly generated gradient and it will output a nice, clean card."
-                    takeaway="I learnt about uploading files, classic Javascript functions for randomization, exporting to PDF, and making forms."
+                    takeaway="I learned about uploading files, classic Javascript functions for randomization, exporting to PDF, and making forms."
                   />
                 </li>
                 <li>
@@ -128,7 +126,7 @@ class App extends Component {
                     projectName="Spotify Genre Playlist Generator"
                     date="October 2018"
                     stack="Python3, Spotify API, GraceNote API"
-                    summary="A command line program that snacs a useres Spotify library and runs it through the GraceNote API to sort it into the proper genre playlist and creates said playliston the user's account."
+                    summary="A command line program that takes a users Spotify library and runs it through the GraceNote API to sort it into the proper genre playlist and creates said playlists on the user's account."
                     takeaway="I learned alot about APIs, data manipulation, and authentication."
                   />
                 </li>

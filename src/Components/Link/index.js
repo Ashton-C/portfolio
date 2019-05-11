@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
 
 export default class Link extends React.Component {
@@ -7,7 +7,6 @@ export default class Link extends React.Component {
     return (
       <div className="Link">
         <a href={linkTo} target="_blank" rel="noopener noreferrer">
-          {this.props.to}{' '}
           <img
             src={this.props.ico}
             width="32px"

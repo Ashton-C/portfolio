@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './styles.css';
 
 export default class SmProject extends React.Component {
   render() {
+    let projectImage = this.props.image;
     return (
       <div className="SmProject">
         <h2>{this.props.projectName}</h2>
+        {projectImage ? (
+          <img id="projectImage" src={projectImage} alt="" />
+        ) : null}{' '}
         <div className="sst">
           <div className="stack">
             <h4>Stack: </h4>

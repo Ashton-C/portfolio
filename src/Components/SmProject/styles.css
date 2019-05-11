@@ -25,6 +25,11 @@
   .SmProject .summary {
     padding: 0 10px 0px 10px;
   }
+  #projectImage {
+    height: auto;
+    max-width: 90%;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -36,12 +41,12 @@
     height: 10%;
     width: 95%;
     padding: 10px;
-    margin: 20px 0px 20px 0px;
+    margin: 30px auto;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 1em;
   }
 
-  .SmProject:after {
+  /* .SmProject:after {
     content: '';
     position: absolute;
     left: 0;
@@ -53,10 +58,14 @@
     border-left: 0;
     margin-top: -2em;
     margin-left: -2em;
-  }
+  } */
 
   .SmProject h2 {
     text-align: center;
+  }
+  #projectImage {
+    height: auto;
+    max-width: 100%;
   }
 
   .SmProject > .sst {

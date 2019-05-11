@@ -191,6 +191,7 @@
 
   .section .aboutMe {
     display: flex;
+    align-items: center;
     font-size: 1.5em;
   }
 
@@ -202,15 +203,14 @@
   .section .aboutMe > p {
     line-height: 2;
     width: min-content;
+    height: min-content;
     flex: 1 1 auto;
     background: var(--main-bg-color);
     border-radius: 25px;
   }
-  .largeProjects {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 20px;
+
+  .smallProjects {
+    padding: 0;
   }
 
   .section ul {
