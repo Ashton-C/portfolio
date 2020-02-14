@@ -46,10 +46,10 @@ html {
 }
 
 .intro {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 55%;
   align-items: center;
 }
 
@@ -72,7 +72,7 @@ html {
 
 .seperator {
   border: 10px solid rgb(184, 184, 184);
-
+  background: rgb(184, 184, 184);
   border-radius: 10px;
 }
 
@@ -179,6 +179,7 @@ html {
 
 /* ABOUT AND CONTACT ###################################################################################################################################################################### */
 #about h4 {
+  font-family: var(--head-font);
 }
 
 .about_p {
