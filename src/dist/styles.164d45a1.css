@@ -1,0 +1,35 @@
+:root {
+  --main-bg-color: rgba(255, 255, 255, 0.2);
+  --accent-color: #6cffad;
+  --head-font: "Titillium Web", sans-serif;
+  --body-font: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-size: 4em;
+  width: 99%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.link {
+  border: #232323 1px solid;
+  border-radius: 5px;
+  width: 25%;
+  margin: 10px;
+  /* background-color: #343434; */
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: background-color 0.1s ease-in;
+}
+
+.link:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */
