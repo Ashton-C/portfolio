@@ -1,0 +1,247 @@
+/* Portfolio v2 styles.css by Ashton Christensen January 2020 ############################################################################################################################## */
+
+:root {
+  --main-bg-color: rgb(236, 236, 236);
+  --accent-color: #6cffad;
+  --accent-orange: #da8540;
+  --accent-blue: #4048da;
+  --accent-green: #40da85;
+  --head-font: 'Varela Round', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+html {
+  background-color: var(--main-bg-color);
+  font-size: 3em;
+  width: 90%;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  z-index: 1;
+}
+
+/* NAV AND INTRO #########################################################################################################################################################################  */
+
+.nav {
+  padding: 5px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  text-decoration: none;
+  font-family: var(--head-font);
+}
+
+[name='about'] {
+  color: var(--accent-green);
+}
+
+[name='projects'] {
+  color: var(--accent-orange);
+}
+
+[name='contact'] {
+  color: var(--accent-blue);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 55%;
+  align-items: center;
+}
+
+.intro .selfie {
+  width: 500px;
+  height: 500px;
+  border-radius: 500px;
+}
+
+.intro_name {
+  font-family: var(--head-font);
+  margin: 0;
+}
+
+.intro_text {
+  margin: 0;
+}
+
+/* END INTRO ############################################################################################################################################################################## */
+
+.seperator {
+  border: 10px solid rgb(184, 184, 184);
+
+  border-radius: 10px;
+}
+
+/* PROJECTS ############################################################################################################################################################################### */
+#projects {
+}
+.projects_header {
+  font-family: var(--head-font);
+  color: var(--accent-orange);
+}
+.project_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#projects .proj {
+  width: 40vw;
+  height: 40vw;
+  list-style: none;
+  background-color: black;
+}
+
+/* .proj:nth-child(-n + 3) {
+  background-color: var(--accent-green);
+}
+.proj:nth-child(3n + 1) {
+  background-color: var(--accent-blue);
+} */
+.proj_button {
+  /* height: auto;
+  max-width: 100%;
+  margin: auto; */
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.ktracker {
+  background: url('imgs/Ktrackerimg.png');
+  background-position: center;
+  background-size: cover;
+}
+.soughttechskills {
+  background: url('imgs/SoughtTechSkillsImg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.spotifyplaylists {
+  background: url('imgs/SpotifyGenrePlaylistGenerator_screencap.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.codesandbox {
+  background: url('imgs/codesandboxio_portfolio_screencap.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  height: fit-content;
+  width: 80vw;
+  margin: 50px 2vw;
+  transition: visibility 0s linear 0.1s, opacity 0.3s ease, display 0.3s ease;
+}
+
+.modal-container {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 35px;
+  padding: 15px;
+}
+
+.modal h3 {
+  color: var(--accent-green);
+  font-family: var(--head-font);
+}
+
+.modal_p {
+  font-weight: 300;
+  font-size: 0.4em;
+}
+
+.modal_a {
+  color: var(--accent-blue);
+  font-size: 0.4em;
+}
+
+.modal.open {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+/* END PROJECTS ########################################################################################################################################################################### */
+
+/* ABOUT AND CONTACT ###################################################################################################################################################################### */
+#about h4 {
+}
+
+.about_p {
+  font-size: 0.8em;
+}
+
+.about_skills_img {
+  height: 30vw;
+  width: 30vw;
+  background-color: var(--accent-blue);
+  border-radius: 30vw;
+  margin: auto;
+}
+
+.about_passion_img {
+  height: 30vw;
+  width: 30vw;
+  background-color: var(--accent-orange);
+  border-radius: 30vw;
+  margin: auto;
+}
+
+.about_experience_img {
+  height: 30vw;
+  width: 30vw;
+  background-color: var(--accent-green);
+  border-radius: 30vw;
+  margin: auto;
+}
+
+.material-icons {
+  font-size: 4em !important;
+  transform: translateY(5vw);
+}
+
+#contact h3 {
+  color: var(--accent-blue);
+  font-family: var(--head-font);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  height: 9vh;
+}
+
+.linklistitem {
+  width: 20vw;
+  height: 20vw;
+}
+.contact_icon {
+  width: 100%;
+  height: 100%;
+  fill: #111111;
+}
+img.contact_icon {
+  width: 100%;
+  height: 50%;
+}
+.contact_email {
+  color: var(--accent-orange);
+}
+
+/* END ABOUT AND CONTACT ################################################################################################################################################################## */
